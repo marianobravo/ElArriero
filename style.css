@@ -1,103 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body{
     font-size: 62.5%;
     background-color: #F4DDD5;
     margin: 0;
     padding: 0;
 }
-a:hover{
-    background-color: #a77e272f;
-}
 .logo{
     width: 10rem;
-    height: auto;
-
-    
+    height: auto; 
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr;     
+    gap: 0px 0px;
+    align-items: flex-start;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "menu menu menu"
+    "footer footer footer"
+    ;
 }
 .titulo{
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    background-color: #222D44;
-    font-size: 2rem;
-    padding: 10px 80px;
-    margin-top: 2px;
-    text-decoration: underline;
+    grid-area: titulo;
 }
 .menu{
-    background-color: #3d3d3d;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 2rem;
+    grid-area: menu;
 }
-main{
-    margin-top: 1rem;
-}
-.menu ul{
-    list-style:none ;
-    }
-.menu ul li{
-   display: inline;
-    margin: 1rem 1rem;
-}
-.menu ul li a{
+.footer{
+    grid-area: footer;
+    grid-column: 1 /span 3;
     font-weight: bold;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    }
-h2{
-    color: #000000;
-    text-decoration: underline;
-}
-.inicio h3{
-    color:  #fff;
-    font-size: 4rem;
-    text-decoration: none;
+    background-color: #ff0000;
+    color: #0d0d0d;
+    font-size: 25px;
 }
 .plato{
-    display:line ;
-    border-radius: 2rem;
-    background-color: #222D44;
-}
-a:hover{
-    background-color: #EAE9E5;
-}
-.plato p{
-    color: #fff;
-    font-size: 1rem;
-}
-img{
-    padding: 50px 50px 25px 50px;
-    height: 11rem;
-}
-.plato h3{
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-}
-.combo{
-    font-size: 2rem;
-}
-footer{
-    background-color: #3D3D3D;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-footer ul{
-    list-style:none;
-    display: flex;
-}
-footer ul li{
-    margin-left: 2rem;
-}
-footer ul li a{
-    text-decoration: none; 
-    font-size: 1rem;
-    color: #fff;
-}
- .platoferta{
     background-color: #222D44;
     margin-right: auto;
     margin-top: 10px;
@@ -105,20 +47,35 @@ footer ul li a{
     width: fit-content;
     height: fit-content;
     font-size: 25px;
-    padding: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #d9f1b9;
- }
-h3{
-    font-size: 30px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    color: #fff;
+    padding: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: #0d0d0d;
 }
 
-.conteiner{
-display: flex;
-
+nav{
+    font-weight: bold;
+    background-color: #ff0000;
+    justify-content: flex-start;
 }
-.texto_negro{
-    color: #000000;
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.ofertasas{
+    background-color: #222D44;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    padding: 25px;
 }
