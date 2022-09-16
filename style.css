@@ -56,7 +56,8 @@ footer a{
 
 nav{
     font-weight: bold;
-    background-color: #ff0000;
+    background: rgb(205,70,70);
+    background: radial-gradient(circle, rgba(205,70,70,1) 6%, rgba(143,35,27,1) 100%);
     justify-content: flex-start;
 }
 nav ul li{
