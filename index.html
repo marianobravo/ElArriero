@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante-Parrilla Arriero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
     rel="stylesheet"
@@ -14,51 +15,113 @@
 </head>
 
 <body>
-    <div class="contenedor">
         <header class="titulo">
-            <img src="./img/logo.jpg" alt="Logo" class="logo">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="./contacto.html">Contactos</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a href="./promosysorteos.html">Promos y Sorteos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="./sobrenosotros.html">Sobre Nosotros</a>
+                      <a class="nav-link" href="./contacto.html">Contactos</a>
+                      <a class="nav-link" href="./galeria.html">Galeria</a>
+                      <a class="nav-link" href="./promosysorteos.html">Promos y sorteos</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main class="menu">
-            <h3 class="inicio  animate__animated animate__fadeIn">Te mostramos nuestros riquisimos platos del dia:</h3>
-            <div class="plato">
-                <img src="./img/parrila.jpg" alt="parrilla">
-                <h3>Parrilla completa</h3>
+            <h3 class="inicio animate__animated animate__lightSpeedInRight">Te mostramos nuestros riquisimos platos del dia:</h3>
+            <div class="row row-cols-2 row-cols-md-2 g-4">
+                <div class="presentacion">
+                  <div class="plato animate__animated animate__lightSpeedInRight">
+                  <div class="card">
+                    <img src="./img/parrila.jpg" class="card-img-top" alt="Parrilada para 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Parrilada para 2</h5>
+                      <p class="card-text">La parrila incluye : asado, vacio, bondiola, chinchu, riñon, morcilla, chorizo y guarnicion a eleccion</p>
+                      <p class="card-text"><small class="text-muted">$3800</small></p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="presentacion">
+                  <div class="plato animate__animated animate__lightSpeedInRight">
+                  <div class="card">
+                    <img src="./img/cerdo.jpg" class="card-img-top" alt="Pieza cerdo">
+                    <div class="card-body">
+                      <h5 class="card-title">Pieza cerdo</h5>
+                      <p class="card-text">Porcion individual acompañado de guarnicion a eleccion</p>
+                      <p class="card-text"><small class="text-muted">$800</small></p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="presentacion">
+                  <div class="plato animate__animated animate__lightSpeedInRight">
+                  <div class="card">
+                    <img src="./img/milapizza.jpg" class="card-img-top" alt="MilapizzaCompleta">
+                    <div class="card-body">
+                      <h5 class="card-title">Milapizza napo a caballo</h5>
+                      <p class="card-text">Milapizza con huevo frito, jamon, muzza, morron mas porcion de fritas (rinde para 3 personas)</p>
+                      <p class="card-text"><small class="text-muted">$4500</small></p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="presentacion">
+                  <div class="plato animate__animated animate__lightSpeedInRight">
+                  <div class="card">
+                    <img src="./img/asado2.jpg" class="card-img-top" alt="Tira">
+                    <div class="card-body">
+                      <h5 class="card-title">Porcion individual de tira de asado</h5>
+                      <p class="card-text">Porcion individual de tira de asado</p>
+                      <p class="card-text"><small class="text-muted">$900</small></p>
+                    </div>
+                  </div>
+                </div>
+                </div>
             </div>
-            <div class="plato animate__animated animate__lightSpeedInRight">
-                <img src="./img/churrasquito.jpg" alt="churrasco simple">
-                <h3>Churrasco acompañado de una ensalada</h3>
-            </div>
-            <div class="plato animate__animated animate__lightSpeedInRight">
-                <img src="./img/cerdo.jpg" alt="cerdo">
-                <h3>Plato de cerdo con palta tomate y limon</h3>
-            </div>
-            <div class="plato animate__animated animate__lightSpeedInRight">
-                <img src="./img/milapizza.jpg" alt="milapizza">
-                <h3>Milapizza a caballo con fritas</h3>
-            </div>
-            <div class="plato animate__animated animate__lightSpeedInRight">
-                <img src="./img/asado2.jpg" alt="asado">
-                <h3>corte de carne simple y guarnicion a eleccion </h3>
-            </div>
-            </section>
+        </div>    
         </main>
         <footer class="footer">
-            <ul>
-                <li><a href="https://www.instagram.com/parrilla_elarriero/">instagram</a></li>
-                <li><a href="https://wa.me/5491158201467?text=Me%20interesa%20hacer%20una%20reserva">Numero</a></li>
-                <li><a href="./sobrenosotros.html">Ubicacion</a></li>
-            </ul>
+            <footer class="bg-light text-center text-white">
+                <div class="container p-4 pb-0">
+                  <section class="mb-4">
+                    <a
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #3b9847;"
+                      href="https://wa.me/5491158201467?text=Me%20interesa%20hacer%20una%20reserva"
+                      role="button"
+                      ><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    ></a>
+                    <a
+                    ></a>
+                    <a
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #dd4b39;"
+                      href="./sobrenosotros.html"
+                      role="button"
+                      ><i class="fa fa-map-marker"></i>"></i
+                    ></a>
+                    <a
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #ac2bac;"
+                      href="https://www.instagram.com/parrilla_elarriero/"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2020 Copyright:
+                  <a class="text-white" href="">ElArriero</a>
+                </div>
+              </footer>
         </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,78 +5,25 @@
 }
 body{
     font-size: 62.5%;
-    background-color: #F4DDD5;
+    background-color: #4ABDAC;
     margin: 0;
     padding: 0;
 }
-.logo{
-    width: 10rem;
-    height: auto; 
+a:hover{
+    color: #FC4A1A;
 }
-.contenedor{
+.contenedor{   
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.2fr 0.2fr;     
-    gap: 0px 0px;
-    align-items: flex-start;
-    grid-template-areas:
-    "titulo titulo titulo"
-    "menu menu menu"
-    "footer footer footer"
-    ;
+    grid-template-columns: auto ;
 }
-.titulo{
-    grid-area: titulo;
-}
-.menu{
-    grid-area: menu;
-}
-.footer{
-    grid-area: footer;
-    grid-column: 1 /span 3;
-    font-weight: bold;
-    background-color: #ff0000;
-    color: #0d0d0d;
-    font-size: 25px;
-}
-.plato{
-    background-color: #222D44;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: fit-content;
-    height: fit-content;
-    font-size: 25px;
-    padding: 25px;
-}
-footer a{
-    text-decoration: none;
-    color: #0d0d0d;
-}
-
 nav{
-    font-weight: bold;
-    background: rgb(205,70,70);
-    background: radial-gradient(circle, rgba(205,70,70,1) 6%, rgba(143,35,27,1) 100%);
-    justify-content: flex-start;
+    background-color: #FC4A1A;
 }
-nav ul li{
-    text-decoration: none;
-    list-style: none;
+.card-img-top{
+    height: 150px;
+    width: 250px;
 }
-img{
-    height: auto;
-    width: auto;
-    max-width: 200px;
-    max-height: 200px;
-}
-.ofertasas{
-    background-color: #222D44;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: fit-content;
-    height: fit-content;
-    font-size: 25px;
-    padding: 25px;
+.card{
+    background-color: #DFDCE3;
+    vertical-align: middle;
 }
